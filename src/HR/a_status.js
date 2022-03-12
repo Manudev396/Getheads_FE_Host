@@ -20,7 +20,7 @@ class Asatus extends React.Component
         var u_id=localStorage.getItem('user_id').toString();
         console.log(u_id)
         const msg=document.getElementById('msg').value;
-        fetch('http://localhost:5000/status/'+u_id,{
+        fetch('https://getheads-api.herokuapp.com/status/'+u_id,{
             method:'POST',
             body:JSON.stringify({
                 msg

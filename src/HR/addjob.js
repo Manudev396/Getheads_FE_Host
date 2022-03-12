@@ -24,7 +24,7 @@ class Addjob extends React.Component
     }
 
     getData=()=>{
-        fetch("http://localhost:5000/addjob",{
+        fetch("https://getheads-api.herokuapp.com/addjob",{
             headers:{
                 'Content-Type':'application/json',
                 'token':localStorage.getItem('token').toString()
@@ -45,7 +45,7 @@ class Addjob extends React.Component
          const title=document.getElementById('title').value;
          const desc=document.getElementById('dsc').value;
          
-         fetch('http://localhost:5000/addjob',{
+         fetch('https://getheads-api.herokuapp.com/addjob',{
              method:"POST",
              body:JSON.stringify({
                  name:name,

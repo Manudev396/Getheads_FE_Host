@@ -71,7 +71,7 @@ class List extends React.Component
         }
         mcq=ans
         console.log(mcq)
-        fetch('http://localhost:5000/viewlist',{
+        fetch('https://getheads-api.herokuapp.com/viewlist',{
             method:'POST',
             body:JSON.stringify({
                 mcq

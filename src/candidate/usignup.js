@@ -42,7 +42,7 @@ class Usign extends React.Component
           data.append('fresher', frs);
           data.append('image',this.selectedFile);
 
-          fetch('http://localhost:5000/usersignup',{
+          fetch('https://getheads-api.herokuapp.com/usersignup',{
               method:'POST',
               body: data
           })

@@ -24,7 +24,7 @@ class Profile extends React.Component
     }
 
     showprofile=()=>{
-        fetch('http://localhost:5000/uprofile',
+        fetch('https://getheads-api.herokuapp.com/uprofile',
         {
             headers:{
                 'Content-Type':'application/json',
@@ -43,7 +43,7 @@ class Profile extends React.Component
     }
 
     logout=()=>{
-        fetch('http://localhost:5000/ulogout',{
+        fetch('https://getheads-api.herokuapp.com/ulogout',{
             headers:{
                 'Content-Type':'application/json',
                 'token':localStorage.getItem('token').toString()

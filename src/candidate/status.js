@@ -21,7 +21,7 @@ class Status extends React.Component
 
     showstatus=()=>{
         // const data = localStorage.getItem('tempcompany').toString();
-        fetch('http://localhost:5000/ustatus',{
+        fetch('https://getheads-api.herokuapp.com/ustatus',{
             headers:{
                 'Content-Type':'application/json',
                 'token':localStorage.getItem('token').toString()

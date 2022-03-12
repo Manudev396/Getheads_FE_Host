@@ -23,7 +23,7 @@ class Homepage extends React.Component{
     }
 
     getData = ()=>{
-        fetch('http://localhost:5000/uhome',{
+        fetch('https://getheads-api.herokuapp.com/uhome',{
             headers:{
                 'Content-Type':'application/json',
                 'token':localStorage.getItem('token').toString()
@@ -35,7 +35,7 @@ class Homepage extends React.Component{
         .then(result => {
             this.result = result.data;
             this.user=result.ur;
-            const uri = "http://localhost:5000/images/" + this.result.imgurl;
+            const uri = "https://getheads-api.herokuapp.com/images/" + this.result.imgurl;
             toast.info("Welcome "+this.user,{autoClose:8000})
             this.setState({getData: true,url:uri});
         })

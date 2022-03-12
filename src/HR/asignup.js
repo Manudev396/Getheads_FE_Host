@@ -28,7 +28,7 @@ class Asign extends React.Component
        
          console.log(A_data)
 
-          fetch('http://localhost:5000/adminsignup',{
+          fetch('https://getheads-api.herokuapp.com/adminsignup',{
               method:'POST',
               body:A_data
           })

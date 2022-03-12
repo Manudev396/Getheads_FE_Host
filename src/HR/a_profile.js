@@ -27,7 +27,7 @@ class Aprofile extends React.Component
     getprofile=()=>{
         var u_id=localStorage.getItem('user_id').toString()
         console.log(u_id)
-        fetch('http://localhost:5000/vprofile/'+u_id,{
+        fetch('https://getheads-api.herokuapp.com/vprofile/'+u_id,{
             headers:{
                 'Content-Type':'application/json',
                 'token':localStorage.getItem('token').toString()

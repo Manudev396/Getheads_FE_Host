@@ -21,7 +21,7 @@ class Login extends React.Component
          {
         const email=document.getElementById('email').value;
         const pass=document.getElementById('pass').value;
-        fetch('http://localhost:5000/alogin',{
+        fetch('https://getheads-api.herokuapp.com/alogin',{
             method:'POST',
             body:JSON.stringify({
                 email:email,
@@ -49,7 +49,7 @@ class Login extends React.Component
        {
         const email=document.getElementById('email').value;
         const pass=document.getElementById('pass').value;
-        fetch('http://localhost:5000/login',{
+        fetch('https://getheads-api.herokuapp.com/login',{
             method:'POST',
             body:JSON.stringify({
                 email:email,

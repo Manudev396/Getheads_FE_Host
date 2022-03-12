@@ -9,7 +9,7 @@
 //     sendData = () => {
 //         const email = document.getElementById('email').value;
 //         const pas = document.getElementById('pas').value;
-//         fetch('http://localhost:5000/login',{
+//         fetch('https://getheads-api.herokuapp.com/login',{
 //             method: 'POST',
 //             body: JSON.stringify({
 //                 email: email,

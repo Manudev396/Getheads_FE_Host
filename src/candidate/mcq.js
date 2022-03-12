@@ -75,7 +75,7 @@ class Mcq1 extends React.Component
         }
         mcq=ans
 
-        fetch('http://localhost:5000/applyjob/'+this.compid,{
+        fetch('https://getheads-api.herokuapp.com/applyjob/'+this.compid,{
             method:'POST',
             body:JSON.stringify({
                 mcq:mcq

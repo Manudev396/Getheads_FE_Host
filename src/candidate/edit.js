@@ -21,7 +21,7 @@ class Edit extends React.Component
     }
 
     showprofile=()=>{
-        fetch('http://localhost:5000/uprofile',
+        fetch('https://getheads-api.herokuapp.com/uprofile',
         {
             headers:{
                 'Content-Type':'application/json',
@@ -45,7 +45,7 @@ class Edit extends React.Component
         const address=document.getElementById('add').value; 
         const exp=document.getElementById('exp').value;
 
-        fetch('http://localhost:5000/userupdate',{
+        fetch('https://getheads-api.herokuapp.com/userupdate',{
             method:'POST',
             body:JSON.stringify({
                 name:name,
